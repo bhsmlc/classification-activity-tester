@@ -10,4 +10,4 @@ def test(func):
     if func(instance[0], instance[1]) == answer:
       score += 1
     total += 1
-  return floor((score / total) * 10000 + 0.5) / 100
+  return ((score / total) * 10000 + 0.5) // 1 / 100
